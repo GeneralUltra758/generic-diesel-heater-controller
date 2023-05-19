@@ -15,7 +15,7 @@ To communicate with the heater, you need the following hardware components:
 - FTDI RS232 to TTL serial breakout board (i used [this one from DSD tech](https://www.amazon.de/dp/B07BBPX8B8))
 - Simple open-drain or open-collector buffer circuit for one-wire serial conversion (circuit diagram below)
 
-Connect the FTDI breakout board to the heater's communication port using the appropriate wiring. The open-drain buffer circuit is used to convert the RS232 signal to one-wire serial for communication.
+Connect the FTDI breakout board to the heater's communication port via the open-drain Buffer. The open-drain buffer circuit is used to convert the RS232 signal to one-wire serial for communication.
 
 I seems that my heater was a new 3.3V logic level for the controller? so far ive only heard of them all being 5V. Consequently i had to set the Vcc jumper on my FTDI breakout board to 3.3v instead of 5V. also i had no Black wire, my ground was on a green wire. Use a multimeter to determine which one is ground and what voltage your controller has.
 
